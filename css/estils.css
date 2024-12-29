@@ -224,7 +224,7 @@ header .max-width ul li {
     margin-top: 2rem;
 }
 
-.about form legend {
+.about form div {
     text-align: left;
     line-height: 1.5;
     margin-bottom: 0.5rem;
@@ -417,7 +417,6 @@ header .max-width ul li {
 
 #blog_content h1{
     font-weight: 700;
-    font-style: bold;
 }
 
 #blog_content section article {
@@ -508,7 +507,7 @@ header .max-width ul li {
 
 .blog_page.active {
     background-color: rgb(64, 195, 130);
-    border-color: rgb(64, 195, 130);
+    border: none;
     color: rgb(255, 255, 255);
 }
 
@@ -758,8 +757,9 @@ footer p {
         width: 65%;
     }
 
-    .about form legend {
+    .about form div {
         margin-bottom: 1em;
+        text-align: left;
     }
 
     #stories_content {
@@ -1100,7 +1100,7 @@ footer p {
 
     .blog_page:hover {
         background-color: rgb(64, 195, 130);
-        border-color: rgb(64, 195, 130);
+        border: none;
         color: rgb(255, 255, 255);
     }
 

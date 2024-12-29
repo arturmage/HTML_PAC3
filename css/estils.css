@@ -14,7 +14,7 @@ html, body {
 }
 
 body {
-    font-family: 'Alegreya', sans-serif;
+    font-family: 'Alegreya Sans', sans-serif;
     margin: 0;
     padding: 0;
     background-color: rgb(242, 242, 230);
@@ -171,7 +171,7 @@ header .max-width ul li {
 }
 
 .home_img h1 {
-    font-size: 2rem;
+    font-size: 3.5rem;
     font-weight: 700;
     margin: 0;
     padding: 0;
@@ -179,7 +179,7 @@ header .max-width ul li {
 }
 
 .home_img h2 {
-    font-size: 1.75rem;
+    font-size: 2rem;
     font-weight: 400;
     padding: 0;
     transform: translateY(1rem);
@@ -206,6 +206,7 @@ header .max-width ul li {
 .about h2 {
     text-align: left;
     margin-bottom: 3rem;
+    font-size: 1.75rem;
 }
 
 .about p {
@@ -259,6 +260,7 @@ header .max-width ul li {
 }
 
 .stories h2 {
+    font-size: 1.75rem;
     text-align: left;
     margin-bottom: 3rem;
 }
@@ -413,6 +415,11 @@ header .max-width ul li {
     padding: 1rem;
 }
 
+#blog_content h1{
+    font-weight: 700;
+    font-style: bold;
+}
+
 #blog_content section article {
     display: flex;
     flex-direction: column;
@@ -505,6 +512,171 @@ header .max-width ul li {
     color: rgb(255, 255, 255);
 }
 
+/** POST **/
+#post_intro {
+    padding: 1rem;
+}
+
+#post_content {
+    padding: 1rem;
+}
+
+#post_text h2 {
+    margin-top: 3rem;
+}
+
+.breadcrumb {
+    font-size: 0.8rem;
+    margin: 0;
+    text-align: left;
+    margin-bottom: 3rem;
+}
+
+.breadcrumb ul {
+    list-style: none;
+    display: flex;
+    gap: 0.25rem;
+    padding: 0;
+    margin: 0;
+}
+
+.breadcrumb ul li {
+    position: relative;
+    display: inline-block;
+}
+
+.breadcrumb ul li:not(:last-child)::after {
+    content: ">";
+    margin-left: 0.25rem;
+}
+
+.breadcrumb ul li a {
+    text-decoration: none;
+}
+
+.breadcrumb ul li a:hover {
+    color: rgb(64, 195, 130);
+}
+
+#post_intro h1 {
+    font-size: 1.75em;
+    font-weight: 700;
+    margin-bottom: 3rem;
+}
+
+#post_intro p {
+    font-size: 0.8em;
+}
+
+.post_img {
+    position: relative;
+    width: 100%;
+    height: 50vh;
+    margin-bottom: 2rem;
+    overflow: hidden;
+}
+
+.post_img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.post_img .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+.post_video iframe {
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+    aspect-ratio: 16 / 9;
+}
+
+.post_video p {
+    font-size: 0.75em;
+}
+
+#post_text ol li {
+    margin-bottom: 1rem;
+}
+
+.post_line {
+    width: 100%;
+    height: 1px;
+    background-color: black;
+    margin: 0;
+    padding: 0;
+}
+
+#post_interests {
+    padding: 1rem;
+}
+
+#post_interests_title {
+    font-size: 1.25em;
+    margin-top: 2rem;
+}
+
+.post_article_text a {
+    text-decoration: none;
+    font-size: 0.75em;
+}
+
+.post_article_text h2 {
+    margin-top: 0.5rem;
+    text-align: left;
+}
+
+.post_article_frame {
+    margin: 0;
+    background-color: rgb(255, 255, 255);
+}
+
+.post_img_info {
+    padding: 1rem;
+}
+
+#post_interests article {
+    margin-bottom: 2rem;
+}
+
+#post_interests .button_a {
+    margin-top: 0;
+}
+
+#post_content article section {
+    text-align: left;
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+}
+
+#post_interests article section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 0rem;
+    background-color: rgb(255, 255, 255);
+}
+
+#post_interests .button_a {
+    margin-top: 0;
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+}
 
 /*** FOOTER ***/
 footer {
@@ -626,6 +798,59 @@ footer p {
         font-size: 2.5em;
     }
 
+     /** POST **/
+    .breadcrumb {
+        margin-top: 1rem;
+    }
+ 
+    #post_intro {
+        font-weight: 400;
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
+ 
+    #post_intro h1 {
+        font-size: 3em;
+    }
+
+    #post_intro p {
+        font-size: 1em;
+    }
+
+    #post_content h2 {
+        font-size: 2em;
+    }
+
+    #post_text_intro {
+        font-size: 1.5em;
+        line-height: 1.5;
+    }
+
+    .post_line {
+        margin-top: 4rem;
+    }
+
+    #post_interests article {
+        display: grid;
+        grid-template-columns: repeat(2, 2fr);
+        gap: 1rem;
+    }
+
+    #post_interests article section {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 0rem;
+        background-color: rgb(255, 255, 255);
+    }
+    
+    #post_interests .button_a {
+        margin-top: 0;
+        margin-left: 1rem;
+        margin-bottom: 1rem;
+    }
+
+
     /** BLOG **/
     #blog_content section {
         display: grid;
@@ -652,7 +877,6 @@ footer p {
         margin-bottom: 0;
         padding-bottom: 0;
     }
-
 
     footer .max-width {
         max-width: 100%;
@@ -820,6 +1044,10 @@ footer p {
         margin: 0;
         padding: 0;
     }
+
+    .tema_animal_left h4 {
+        font-weight: 700;
+    }
     
     .tema_animal_mid {
         grid-column: 2;
@@ -874,6 +1102,79 @@ footer p {
         background-color: rgb(64, 195, 130);
         border-color: rgb(64, 195, 130);
         color: rgb(255, 255, 255);
+    }
+
+    /** POST **/
+    #post_intro,
+    #post_content {
+        max-width: 1140px;
+        width: 60%;
+        margin: 0 auto;
+        padding: 0;
+    }
+
+    .breadcrumb {
+        margin-top: 1rem;
+    }
+
+    #post_intro {
+        font-weight: 400;
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
+
+    #post_intro h1 {
+        font-size: 3em;
+    }
+
+    #post_intro p {
+        font-size: 1em;
+    }
+
+    #post_content h2 {
+        font-size: 2em;
+    }
+
+    #post_text_intro {
+        font-size: 1.5em;
+        line-height: 1.5;
+    }
+
+    .post_video {
+        width: 80%;
+        height: auto;
+        margin: auto;
+    }
+
+    .post_video iframe {
+        width: 100%;
+        height: 315px;
+        max-width: 100%;
+        border: none;
+    }
+
+    .post_line {
+        margin-top: 4rem;
+    }
+
+    #post_interests article {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 1rem;
+    }
+
+    #post_interests article section {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 0rem;
+        background-color: rgb(255, 255, 255);
+    }
+    
+    #post_interests .button_a {
+        margin-top: 0;
+        margin-left: 1rem;
+        margin-bottom: 1rem;
     }
 
     /*** FOOTER ***/
